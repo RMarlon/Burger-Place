@@ -18,6 +18,7 @@
     --text-color:#FFF;
     --text-color-one: #FE6A0F;
     --text-color-two: #999;
+    --text-color-three:#5F5F5F; 
     /* ----------------- */
     --border-color: #FFF;
     --border-color-one:#999;
@@ -282,6 +283,31 @@ header .menu-icon div{
 
 /*FOOTER*/  
 
+footer{
+    background: var(--bkg-color-three);
+}
+
+footer .container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyrights{
+    font-size: 24px;
+    color:var(--text-color-three);
+}
+
+footer .copyrights a{
+    color: var(--text-color-three);
+    text-decoration: none;
+}
+
+footer .copyrights a:hover{
+    text-decoration: underline;
+}
 
 @media(max-width:820px){
     header nav{
@@ -329,6 +355,11 @@ header .menu-icon div{
 
     .products-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
