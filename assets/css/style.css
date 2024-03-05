@@ -12,6 +12,7 @@
     --bkg-color:#141414;
     /* ----------------- */
     --text-color:#FFF;
+    --text-color-one: #FE6A0F;
 }
 
 body{
@@ -26,4 +27,15 @@ body{
     margin: auto;
     max-width: 1200px;
     padding: 0 20px;
+}
+
+.logo a{
+    font-family: 'Calistoga';
+    font-size: 36px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo a span{
+    color:var(--text-color-one)
 }
