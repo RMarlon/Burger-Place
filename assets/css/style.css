@@ -11,6 +11,7 @@
 :root{
     --bkg-color:#141414;
     --bkg-color-one:#FFF;
+    --bkg-color-two:#FE6A0F;
     /* ----------------- */
     --text-color:#FFF;
     --text-color-one: #FE6A0F;
@@ -113,6 +114,57 @@ header .menu-icon div{
     background: var(--bkg-color-one);
 }
 
+/* HERO*/
+
+.hero .container{
+    display: flex;
+}
+
+.hero .leftside, .hero .rightside{
+    flex: 1;
+}
+
+.hero .leftside{
+    padding-bottom: 150px;
+}
+
+.hero .rightside{
+    text-align: center;
+}
+
+.hero .rightside img{
+    width: auto;
+    height: 600px;
+
+}
+
+.hero h1{
+    font-family: 'Calistoga';
+    font-size: 72px;
+    line-height: 74px;
+    margin-top: 50px;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+.hero .button{
+    display: inline-block;
+    background: var(--bkg-color-two);
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 15px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .button:hover{
+    opacity: 0.8;
+}
+
 @media(max-width:820px){
     header nav{
         display: none;
@@ -120,5 +172,27 @@ header .menu-icon div{
 
     header .menu{
         display: flex;
+    }
+
+    .hero .container{
+        flex-direction: column;
+    }
+
+    .hero .leftside{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero .rightside{
+        padding-bottom: 50px;
+    }
+
+    .hero .rightside img{
+        height: 300px;
+    }
+
+    .hero h1{
+        font-size: 44px;
+        line-height: 50px;
     }
 }
